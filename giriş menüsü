@@ -1,0 +1,47 @@
+
+
+def kayıt():
+    print('kayıt oluşturunuz')
+    print('Adiniz:')
+    global a 
+    a = input()
+    print('Şifreniz')
+    global b
+    b = input()
+
+def kontrol_etme():
+    if (a==c and b==d):
+        menü()
+    elif (a== c and b!=d):
+        
+        print('şifre yanlış')
+        giriş()
+        
+    elif (a!=c and b==d):
+        
+        print('ad yanlış')
+        giriş()
+        
+    else :
+        print('ad ve şifre yanlış')
+        giriş()
+
+def giriş():
+    print('Adınız:')
+    global c
+    c = input()
+    print('Şifreniz:')
+    global d
+    d = input()
+    kontrol_etme()
+
+def menü():
+    print('girdiniz  ')
+
+
+
+kayıt()
+giriş()
+
+
+
